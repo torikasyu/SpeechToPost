@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5030C681E3F6E93005439C8 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C671E3F6E93005439C8 /* ConfigViewController.swift */; };
+		F5030C6A1E3F7334005439C8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C691E3F7334005439C8 /* Util.swift */; };
+		F5947FD61E3F692E0090989E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5947FD51E3F692E0090989E /* Speech.framework */; };
 		F5AAB98E1E3F6769008F3A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */; };
 		F5AAB9901E3F6769008F3A31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98F1E3F6769008F3A31 /* ViewController.swift */; };
 		F5AAB9931E3F6769008F3A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9911E3F6769008F3A31 /* Main.storyboard */; };
@@ -65,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F5030C671E3F6E93005439C8 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		F5030C691E3F7334005439C8 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F5947FD51E3F692E0090989E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		F5AAB98A1E3F6769008F3A31 /* SpeechToPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5AAB98F1E3F6769008F3A31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5947FD61E3F692E0090989E /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5947FD41E3F692E0090989E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5947FD51E3F692E0090989E /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5AAB9811E3F6769008F3A31 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +125,7 @@
 				F5AAB9A01E3F6769008F3A31 /* SpeechToPost WatchKit App */,
 				F5AAB9AF1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */,
 				F5AAB98B1E3F6769008F3A31 /* Products */,
+				F5947FD41E3F692E0090989E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,8 @@
 				F5AAB9941E3F6769008F3A31 /* Assets.xcassets */,
 				F5AAB9961E3F6769008F3A31 /* LaunchScreen.storyboard */,
 				F5AAB9991E3F6769008F3A31 /* Info.plist */,
+				F5030C671E3F6E93005439C8 /* ConfigViewController.swift */,
+				F5030C691E3F7334005439C8 /* Util.swift */,
 			);
 			path = SpeechToPost;
 			sourceTree = "<group>";
@@ -307,6 +325,8 @@
 			files = (
 				F5AAB9901E3F6769008F3A31 /* ViewController.swift in Sources */,
 				F5AAB98E1E3F6769008F3A31 /* AppDelegate.swift in Sources */,
+				F5030C681E3F6E93005439C8 /* ConfigViewController.swift in Sources */,
+				F5030C6A1E3F7334005439C8 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -446,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -569,6 +589,7 @@
 				F5AAB9BF1E3F6769008F3A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5AAB9C11E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +598,7 @@
 				F5AAB9C31E3F6769008F3A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5AAB9C51E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +607,7 @@
 				F5AAB9C71E3F6769008F3A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

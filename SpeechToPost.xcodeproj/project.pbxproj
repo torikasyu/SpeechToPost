@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5AAB98E1E3F6769008F3A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */; };
+		F5AAB9901E3F6769008F3A31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98F1E3F6769008F3A31 /* ViewController.swift */; };
+		F5AAB9931E3F6769008F3A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9911E3F6769008F3A31 /* Main.storyboard */; };
+		F5AAB9951E3F6769008F3A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9941E3F6769008F3A31 /* Assets.xcassets */; };
+		F5AAB9981E3F6769008F3A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9961E3F6769008F3A31 /* LaunchScreen.storyboard */; };
+		F5AAB99D1E3F6769008F3A31 /* SpeechToPost WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5AAB99C1E3F6769008F3A31 /* SpeechToPost WatchKit App.app */; };
+		F5AAB9A31E3F6769008F3A31 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9A11E3F6769008F3A31 /* Interface.storyboard */; };
+		F5AAB9A51E3F6769008F3A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9A41E3F6769008F3A31 /* Assets.xcassets */; };
+		F5AAB9AC1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5AAB9AB1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5AAB9B31E3F6769008F3A31 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB9B21E3F6769008F3A31 /* InterfaceController.swift */; };
+		F5AAB9B51E3F6769008F3A31 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB9B41E3F6769008F3A31 /* ExtensionDelegate.swift */; };
+		F5AAB9B71E3F6769008F3A31 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB9B61E3F6769008F3A31 /* NotificationController.swift */; };
+		F5AAB9B91E3F6769008F3A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AAB9B81E3F6769008F3A31 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5AAB99E1E3F6769008F3A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5AAB9821E3F6769008F3A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5AAB99B1E3F6769008F3A31;
+			remoteInfo = "SpeechToPost WatchKit App";
+		};
+		F5AAB9AD1E3F6769008F3A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5AAB9821E3F6769008F3A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5AAB9AA1E3F6769008F3A31;
+			remoteInfo = "SpeechToPost WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5AAB9C01E3F6769008F3A31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F5AAB9AC1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AAB9C41E3F6769008F3A31 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F5AAB99D1E3F6769008F3A31 /* SpeechToPost WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F5AAB98A1E3F6769008F3A31 /* SpeechToPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5AAB98F1E3F6769008F3A31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5AAB9921E3F6769008F3A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5AAB9941E3F6769008F3A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5AAB9971E3F6769008F3A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5AAB9991E3F6769008F3A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5AAB99C1E3F6769008F3A31 /* SpeechToPost WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeechToPost WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AAB9A21E3F6769008F3A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F5AAB9A41E3F6769008F3A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5AAB9A61E3F6769008F3A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5AAB9AB1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpeechToPost WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AAB9B11E3F6769008F3A31 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F5AAB9B21E3F6769008F3A31 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5AAB9B41E3F6769008F3A31 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F5AAB9B61E3F6769008F3A31 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F5AAB9B81E3F6769008F3A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5AAB9BA1E3F6769008F3A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5AAB9871E3F6769008F3A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AAB9A81E3F6769008F3A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5AAB9811E3F6769008F3A31 = {
+			isa = PBXGroup;
+			children = (
+				F5AAB98C1E3F6769008F3A31 /* SpeechToPost */,
+				F5AAB9A01E3F6769008F3A31 /* SpeechToPost WatchKit App */,
+				F5AAB9AF1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */,
+				F5AAB98B1E3F6769008F3A31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5AAB98B1E3F6769008F3A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5AAB98A1E3F6769008F3A31 /* SpeechToPost.app */,
+				F5AAB99C1E3F6769008F3A31 /* SpeechToPost WatchKit App.app */,
+				F5AAB9AB1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5AAB98C1E3F6769008F3A31 /* SpeechToPost */ = {
+			isa = PBXGroup;
+			children = (
+				F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */,
+				F5AAB98F1E3F6769008F3A31 /* ViewController.swift */,
+				F5AAB9911E3F6769008F3A31 /* Main.storyboard */,
+				F5AAB9941E3F6769008F3A31 /* Assets.xcassets */,
+				F5AAB9961E3F6769008F3A31 /* LaunchScreen.storyboard */,
+				F5AAB9991E3F6769008F3A31 /* Info.plist */,
+			);
+			path = SpeechToPost;
+			sourceTree = "<group>";
+		};
+		F5AAB9A01E3F6769008F3A31 /* SpeechToPost WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F5AAB9A11E3F6769008F3A31 /* Interface.storyboard */,
+				F5AAB9A41E3F6769008F3A31 /* Assets.xcassets */,
+				F5AAB9A61E3F6769008F3A31 /* Info.plist */,
+			);
+			path = "SpeechToPost WatchKit App";
+			sourceTree = "<group>";
+		};
+		F5AAB9AF1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5AAB9B21E3F6769008F3A31 /* InterfaceController.swift */,
+				F5AAB9B41E3F6769008F3A31 /* ExtensionDelegate.swift */,
+				F5AAB9B61E3F6769008F3A31 /* NotificationController.swift */,
+				F5AAB9B81E3F6769008F3A31 /* Assets.xcassets */,
+				F5AAB9BA1E3F6769008F3A31 /* Info.plist */,
+				F5AAB9B01E3F6769008F3A31 /* Supporting Files */,
+			);
+			path = "SpeechToPost WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F5AAB9B01E3F6769008F3A31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5AAB9B11E3F6769008F3A31 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5AAB9891E3F6769008F3A31 /* SpeechToPost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5AAB9C51E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost" */;
+			buildPhases = (
+				F5AAB9861E3F6769008F3A31 /* Sources */,
+				F5AAB9871E3F6769008F3A31 /* Frameworks */,
+				F5AAB9881E3F6769008F3A31 /* Resources */,
+				F5AAB9C41E3F6769008F3A31 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5AAB99F1E3F6769008F3A31 /* PBXTargetDependency */,
+			);
+			name = SpeechToPost;
+			productName = SpeechToPost;
+			productReference = F5AAB98A1E3F6769008F3A31 /* SpeechToPost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5AAB99B1E3F6769008F3A31 /* SpeechToPost WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5AAB9C11E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost WatchKit App" */;
+			buildPhases = (
+				F5AAB99A1E3F6769008F3A31 /* Resources */,
+				F5AAB9C01E3F6769008F3A31 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5AAB9AE1E3F6769008F3A31 /* PBXTargetDependency */,
+			);
+			name = "SpeechToPost WatchKit App";
+			productName = "SpeechToPost WatchKit App";
+			productReference = F5AAB99C1E3F6769008F3A31 /* SpeechToPost WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F5AAB9AA1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5AAB9BD1E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost WatchKit Extension" */;
+			buildPhases = (
+				F5AAB9A71E3F6769008F3A31 /* Sources */,
+				F5AAB9A81E3F6769008F3A31 /* Frameworks */,
+				F5AAB9A91E3F6769008F3A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeechToPost WatchKit Extension";
+			productName = "SpeechToPost WatchKit Extension";
+			productReference = F5AAB9AB1E3F6769008F3A31 /* SpeechToPost WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5AAB9821E3F6769008F3A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = torikasyu;
+				TargetAttributes = {
+					F5AAB9891E3F6769008F3A31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KP88P7787K;
+						ProvisioningStyle = Automatic;
+					};
+					F5AAB99B1E3F6769008F3A31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KP88P7787K;
+						ProvisioningStyle = Automatic;
+					};
+					F5AAB9AA1E3F6769008F3A31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KP88P7787K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5AAB9851E3F6769008F3A31 /* Build configuration list for PBXProject "SpeechToPost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5AAB9811E3F6769008F3A31;
+			productRefGroup = F5AAB98B1E3F6769008F3A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5AAB9891E3F6769008F3A31 /* SpeechToPost */,
+				F5AAB99B1E3F6769008F3A31 /* SpeechToPost WatchKit App */,
+				F5AAB9AA1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5AAB9881E3F6769008F3A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AAB9981E3F6769008F3A31 /* LaunchScreen.storyboard in Resources */,
+				F5AAB9951E3F6769008F3A31 /* Assets.xcassets in Resources */,
+				F5AAB9931E3F6769008F3A31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AAB99A1E3F6769008F3A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AAB9A51E3F6769008F3A31 /* Assets.xcassets in Resources */,
+				F5AAB9A31E3F6769008F3A31 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AAB9A91E3F6769008F3A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AAB9B91E3F6769008F3A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5AAB9861E3F6769008F3A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AAB9901E3F6769008F3A31 /* ViewController.swift in Sources */,
+				F5AAB98E1E3F6769008F3A31 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AAB9A71E3F6769008F3A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AAB9B71E3F6769008F3A31 /* NotificationController.swift in Sources */,
+				F5AAB9B51E3F6769008F3A31 /* ExtensionDelegate.swift in Sources */,
+				F5AAB9B31E3F6769008F3A31 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5AAB99F1E3F6769008F3A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5AAB99B1E3F6769008F3A31 /* SpeechToPost WatchKit App */;
+			targetProxy = F5AAB99E1E3F6769008F3A31 /* PBXContainerItemProxy */;
+		};
+		F5AAB9AE1E3F6769008F3A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5AAB9AA1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */;
+			targetProxy = F5AAB9AD1E3F6769008F3A31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5AAB9911E3F6769008F3A31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5AAB9921E3F6769008F3A31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5AAB9961E3F6769008F3A31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5AAB9971E3F6769008F3A31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F5AAB9A11E3F6769008F3A31 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5AAB9A21E3F6769008F3A31 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5AAB9BB1E3F6769008F3A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5AAB9BC1E3F6769008F3A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5AAB9BE1E3F6769008F3A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				INFOPLIST_FILE = "SpeechToPost WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F5AAB9BF1E3F6769008F3A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				INFOPLIST_FILE = "SpeechToPost WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F5AAB9C21E3F6769008F3A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				IBSC_MODULE = SpeechToPost_WatchKit_Extension;
+				INFOPLIST_FILE = "SpeechToPost WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F5AAB9C31E3F6769008F3A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				IBSC_MODULE = SpeechToPost_WatchKit_Extension;
+				INFOPLIST_FILE = "SpeechToPost WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F5AAB9C61E3F6769008F3A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				INFOPLIST_FILE = SpeechToPost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5AAB9C71E3F6769008F3A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP88P7787K;
+				INFOPLIST_FILE = SpeechToPost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5AAB9851E3F6769008F3A31 /* Build configuration list for PBXProject "SpeechToPost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AAB9BB1E3F6769008F3A31 /* Debug */,
+				F5AAB9BC1E3F6769008F3A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5AAB9BD1E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AAB9BE1E3F6769008F3A31 /* Debug */,
+				F5AAB9BF1E3F6769008F3A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5AAB9C11E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AAB9C21E3F6769008F3A31 /* Debug */,
+				F5AAB9C31E3F6769008F3A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5AAB9C51E3F6769008F3A31 /* Build configuration list for PBXNativeTarget "SpeechToPost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AAB9C61E3F6769008F3A31 /* Debug */,
+				F5AAB9C71E3F6769008F3A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5AAB9821E3F6769008F3A31 /* Project object */;
+}

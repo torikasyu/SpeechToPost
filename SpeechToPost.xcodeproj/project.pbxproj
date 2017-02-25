@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F5030C681E3F6E93005439C8 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C671E3F6E93005439C8 /* ConfigViewController.swift */; };
 		F5030C6A1E3F7334005439C8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C691E3F7334005439C8 /* Util.swift */; };
+		F50496AF1E49AF2800D1F5EA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50496AE1E49AF2800D1F5EA /* FBSDKLoginKit.framework */; };
+		F50496B11E49AF3E00D1F5EA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50496B01E49AF3E00D1F5EA /* FBSDKCoreKit.framework */; };
 		F5947FD61E3F692E0090989E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5947FD51E3F692E0090989E /* Speech.framework */; };
 		F5AAB98E1E3F6769008F3A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */; };
 		F5AAB9901E3F6769008F3A31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AAB98F1E3F6769008F3A31 /* ViewController.swift */; };
@@ -70,6 +72,8 @@
 /* Begin PBXFileReference section */
 		F5030C671E3F6E93005439C8 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		F5030C691E3F7334005439C8 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F50496AE1E49AF2800D1F5EA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F50496B01E49AF3E00D1F5EA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		F5947FD51E3F692E0090989E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		F5AAB98A1E3F6769008F3A31 /* SpeechToPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AAB98D1E3F6769008F3A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5947FD61E3F692E0090989E /* Speech.framework in Frameworks */,
+				F50496B11E49AF3E00D1F5EA /* FBSDKCoreKit.framework in Frameworks */,
+				F50496AF1E49AF2800D1F5EA /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +127,8 @@
 		F5AAB9811E3F6769008F3A31 = {
 			isa = PBXGroup;
 			children = (
+				F50496B01E49AF3E00D1F5EA /* FBSDKCoreKit.framework */,
+				F50496AE1E49AF2800D1F5EA /* FBSDKLoginKit.framework */,
 				F5AAB98C1E3F6769008F3A31 /* SpeechToPost */,
 				F5AAB9A01E3F6769008F3A31 /* SpeechToPost WatchKit App */,
 				F5AAB9AF1E3F6769008F3A31 /* SpeechToPost WatchKit Extension */,
@@ -254,17 +262,17 @@
 					F5AAB9891E3F6769008F3A31 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KP88P7787K;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F5AAB99B1E3F6769008F3A31 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KP88P7787K;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F5AAB9AA1E3F6769008F3A31 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KP88P7787K;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -478,11 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KP88P7787K;
 				INFOPLIST_FILE = "SpeechToPost WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "eff30bbd-2a84-4487-bc74-ed5f55a743ec";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard_161212;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -495,11 +506,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = KP88P7787K;
 				INFOPLIST_FILE = "SpeechToPost WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "55edd08a-616c-467c-beca-f9289378f70e";
+				PROVISIONING_PROFILE_SPECIFIER = 170215_SpeechToPostWKitExt;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -516,8 +530,10 @@
 				DEVELOPMENT_TEAM = KP88P7787K;
 				IBSC_MODULE = SpeechToPost_WatchKit_Extension;
 				INFOPLIST_FILE = "SpeechToPost WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eff30bbd-2a84-4487-bc74-ed5f55a743ec";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard_161212;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -531,11 +547,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = KP88P7787K;
 				IBSC_MODULE = SpeechToPost_WatchKit_Extension;
 				INFOPLIST_FILE = "SpeechToPost WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "821844c1-68b3-4763-9380-46e3394110d2";
+				PROVISIONING_PROFILE_SPECIFIER = 170215_SpeechToPostWKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -548,11 +567,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KP88P7787K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SpeechToPost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eff30bbd-2a84-4487-bc74-ed5f55a743ec";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard_161212;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -561,11 +587,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = KP88P7787K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SpeechToPost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.SpeechToPost;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torikasyu.speechtopost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f8eed3f8-34d0-4ad2-bf16-7dccbe992878";
+				PROVISIONING_PROFILE_SPECIFIER = 1702_dist_speechtopost;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
